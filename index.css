@@ -1,0 +1,762 @@
+/* font  */
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+.exo-2 {
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* additional  */
+
+::selection {
+    color: white;
+    background-color: rgb(69, 69, 69);
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* header section  */
+
+header nav {
+    /* background-color: #0000007a; */
+    transition: background .7s linear;
+}
+
+header .nav-link {
+    /* color: white; */
+    font-size: 18px;
+}
+
+header .nav-link.active {
+    color: rgb(255 193 7);
+    text-decoration: underline rgb(255 193 7);
+}
+
+header .nav-item:hover .nav-link,
+header .nav-link:focus {
+    color: rgb(255 193 7);
+    /* text-decoration: underline rgb(255 193 7);/*/
+}
+
+header .dropdown .dropdown-menu .dropdown-item:hover {
+    background: rgb(255 193 7);
+    color: white;
+}
+
+.btn-close {
+    background: none;
+    color: white;
+}
+
+@media screen and (min-width:992px) {
+    header .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+
+/* slider section  */
+.slider {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.slider .images {
+    height: 100vh;
+    width: 100%;
+    background: url('images/slider-image1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change 20s infinite ease;
+}
+
+@keyframes change {
+    0% {
+        background: url('images/slider-image1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background: url('images/slider-image1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    30% {
+        background: url('images/slider-image2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    65% {
+        background: url('images/slider-image2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    70% {
+        background: url('images/slider-image3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    95% {
+        background: url('images/slider-image3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background: url('images/slider-image1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.slider .bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.slider .content {
+    z-index: 3;
+    top: 30%;
+    position: absolute;
+    color: white;
+}
+
+.slider .content .heading-border {
+    border: 5px solid white;
+    border-radius: 30px;
+    padding: 30px 80px;
+    margin-bottom: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+.slider .content .heading-border .img img {
+    top: -15%;
+    left: 46.5%;
+    height: 100px;
+    backdrop-filter: blur(8px);
+}
+
+.slider .content .heading-1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.slider .content .heading-2 {
+    font-size: 120px;
+    margin: 0;
+}
+
+.slider .content .heading-3 {
+    font-size: 30px;
+    margin: 0;
+    /* margin-bottom: 20px; */
+}
+
+.slider .content .get-started {
+    background-color: transparent;
+    border: 2px solid rgb(255 193 7);
+    color: rgb(255 193 7);
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .content .get-started:hover {
+    border: 2px solid rgb(255 193 7);
+    color: black;
+}
+
+.slider .content .get-started .hover-bg {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255 193 7);
+    left: 0%;
+    z-index: -2;
+    transition: all .2s linear;
+}
+
+.slider .content .get-started:hover .hover-bg {
+    top: 0%;
+}
+
+@media screen and (max-width:970px) {
+
+    .slider .content .heading-border {
+        padding: 50px 80px;
+    }
+
+    .slider .content .heading-border .img img {
+        left: 44%;
+    }
+
+    .slider .content .heading-1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .slider .content .heading-2 {
+        font-size: 80px;
+        margin: 0;
+    }
+
+    .slider .content .heading-3 {
+        font-size: 30px;
+        margin: 0;
+        /* margin-bottom: 20px; */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slider .content {
+        top: 37%;
+    }
+
+    .slider .content .heading-border {
+        border: 0px solid white;
+        border-radius: 0px;
+        padding: 30px 0px;
+        margin-bottom: 10px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .slider .content .heading-border .img img {
+        height: 70px;
+        top: -15%;
+        left: 45%;
+        backdrop-filter: none;
+    }
+
+    .slider .content .heading-1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .slider .content .heading-2 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .slider .content .heading-3 {
+        font-size: 15px;
+        margin: 0;
+        /* margin-bottom: 20px; */
+    }
+}
+
+@media screen and (max-width:450px) {
+    .slider .content .heading-border .img img {
+        left: 42%;
+    }
+}
+
+
+
+/* about section  */
+
+.about .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+
+.about .button button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 4px 9px rgb(181 181 181);
+}
+
+.about .button button:hover {
+    /* border: 2px solid rgb(255 193 7); */
+
+    border-bottom: 2px solid rgb(255 193 7);
+    color: black;
+}
+
+.about .button button .hover-bg {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255 193 7);
+    left: 0%;
+    z-index: -2;
+    transition: all .2s linear;
+}
+
+.about .button button:hover .hover-bg {
+    top: 0%;
+}
+
+
+/* about 2 section  */
+.about-2 {
+    color: white;
+    background: url('images/about-2-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-2 .col-md-4:hover {
+    color: rgb(255 193 7);
+    cursor: pointer;
+}
+
+
+/* services section  */
+.services {}
+
+.services .heading {}
+
+.services .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+.services .services-options {}
+
+.services .services-options .service {}
+
+.services .services-options .service ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    color: #01b209;
+    margin: 0;
+    padding: 0;
+}
+
+.services .services-options .service ul li {
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.services .services-options .service ul li .list-border {
+    position: relative;
+    height: 3px;
+    background-color: #01b209;
+    width: 10%;
+    transition: all .3s linear;
+}
+
+.services .services-options .service ul li:hover .list-border {
+    width: 100%;
+}
+
+.services .services-options .service ul li:active {
+    color: rgb(255 193 7);
+}
+
+.services .services-options .service ul li:active .list-border {
+    transition: none;
+    background-color: rgb(255 193 7);
+}
+
+.services .services-options .service ul li.active {
+    color: rgb(255 193 7);
+}
+
+.services .services-options .service ul li.active .list-border {
+    transition: none;
+    width: 100%;
+    background-color: rgb(255 193 7);
+}
+
+.services .service-details .service-detail .button button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 4px 9px rgb(181 181 181);
+}
+
+.services .service-details .service-detail .button button:hover {
+    border-bottom: 2px solid rgb(255 193 7);
+    color: black;
+}
+
+.services .service-details .service-detail .button button .hover-bg {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255 193 7);
+    left: 0%;
+    z-index: -2;
+    transition: all .2s linear;
+}
+
+.services .service-details .service-detail .button button:hover .hover-bg {
+    top: 0%;
+}
+
+/* projects section  */
+
+.projects {
+    color: white;
+}
+
+.projects .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+.projects .clicked-project {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.874);
+    align-content: center;
+}
+
+.projects .clicked-project .clicked-project-image {
+    height: 100%;
+    width: fit-content;
+}
+
+@media screen and (max-width:768px) {
+    .projects .clicked-project .clicked-project-image {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.projects .clicked-project .close-clicked-project {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.projects .clicked-project .close-clicked-project:hover {
+    background-color: rgb(108, 108, 108);
+}
+
+.projects .project-types .project-type {
+    cursor: pointer;
+}
+
+.projects .project-types .project-type.active {
+    background-color: rgb(255 193 7);
+    color: white;
+}
+
+.projects .project-details {
+    overflow-x: hidden;
+}
+
+.projects .project-details .project-detail {
+    overflow: hidden;
+    padding: 0;
+}
+
+.projects .project-details .project-detail .image {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.projects .project-details .project-detail .project-hover-box {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(255 193 7), rgba(0, 0, 0, 0.458), rgba(0, 0, 0, 0.458));
+    cursor: pointer;
+    transition: all .4s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.projects .project-details .project-detail:hover .project-hover-box {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* contact section  */
+.contact .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+.contact .image {
+    background-image: url('images/contact-image1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* client-query section  */
+.client-query .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+.client-query .image {
+    background-image: url('images/whyUs-image.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.client-query .accordion-button {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.client-query .accordion-button:not(.collapsed) {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.client-query .accordion-body {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.client-query .accordion-item {
+    border: 1px solid #495057;
+}
+
+.client-query .accordion-button::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.client-query .accordion-button.collapsed::after {
+    content: "\f054";
+}
+
+
+@media screen and (max-width:768px) {
+    .client-query .image {
+        height: 400px;
+    }
+}
+
+
+
+/* client testimonials  */
+.client-testimonials {}
+
+
+.client-testimonials .heading .heading-border {
+    position: relative;
+    top: -9px;
+    height: 3px;
+    width: 100px;
+    background: rgb(255 193 7);
+    border-radius: 10px;
+}
+
+.client-testimonials .reviews .review {
+    transition: all .5s linear;
+}
+
+.client-testimonials .dots {
+    bottom: 3%;
+    left: 4%;
+    text-align: center;
+}
+
+.client-testimonials .dots .dot {
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.client-testimonials .dots .dot.active {
+    background: rgb(255 193 7);
+}
+
+
+
+
+/* footer section  */
+
+footer {
+    color: rgb(153, 153, 153);
+}
+
+footer h4 {
+    color: rgb(255 193 7);
+}
+
+footer a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+}
+
+footer li {
+    margin: .5rem 2rem;
+}
+
+footer a:hover {
+    color: rgb(255 193 7);
+    cursor: pointer;
+}
+
+footer a:active {
+    color: white;
+    cursor: pointer;
+}
+
+footer .contact-details p:hover {
+    color: rgb(255 193 7);
+}
+
+
+
+
+
+
+/* scroll animation  */
+
+.scroll {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0%;
+        scale: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+
+
+
+
+
+/* Admin Page css  */
+
+.admin a {
+    color: white;
+}
+
+.admin .link-button {
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.admin .link-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.admin .link-button:active {
+    color: white;
+    background-color: rgb(255 193 7);
+}
+
+
+.admin .changesInService {}
+
+.admin .changesInService .box {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.admin .changesInService .box p {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.admin .changesInProjects .delete-button {
+    padding: 15px 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.admin .changesInProjects .delete-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.admin .changesInProjects .delete-button:active {
+    color: white;
+    background-color: rgb(255 193 7);
+}

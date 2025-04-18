@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="This is the best Construction companies website, which provide services like Designing and Construction.">
+    <title>Home | SteelHeaven</title>
+
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- my css -->
+    <link rel="stylesheet" href="index.css">
+
+
+    <!-- favicon  -->
+    <link rel="icon" href="images/steelHeaven-logo-footer.png" />
+</head>
+
+<body class="exo-2">
+
+    <!-- header section  -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/steelHeaven-logo.png" alt="" height="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="images/steelHeaven-logo.png" alt="" height="65px">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> <i
+                                class="fa-solid fa-x"></i> </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item px-2">
+                                <a class="nav-link active" href="javascript:void(0)">Home</a>
+                            </li>
+                            <li class="nav-item  px-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">About</a>
+                                <ul class="dropdown-menu rounded-0">
+                                    <li><a class="dropdown-item py-2" href="#">About Us</a></li>
+                                    <li><a class="dropdown-item py-2" href="#">Team</a></li>
+                                    <li><a class="dropdown-item py-2" href="#">Portfolio</a></li>
+                                    <li><a class="dropdown-item py-2" href="#">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu rounded-0">
+                                    <li><a class="dropdown-item py-2" href="#">Interior Design</a></li>
+                                    <li><a class="dropdown-item py-2" href="#">Architecture Design</a></li>
+                                    <li><a class="dropdown-item py-2" href="#">Construction Management</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link" href="javascript:void(0)">Projects</a>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link" href="javascript:void(0)">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- slider section  -->
+        <section class="slider">
+            <div class="container-fluid p-0 m-0">
+                <div class="images"></div>
+                <div class="bg"></div>
+                <div class="content text-center m-auto w-100">
+                    <div class="heading-border">
+                        <div class="img">
+                            <img class="img-fluid position-absolute " src="images/steelHeaven-logo-footer.png" alt="">
+                        </div>
+                        <h1 class="heading-2">STEELHEAVEN</h1>
+                        <h3 class="heading-3">CONSTRUCTION</h3>
+                    </div>
+                    <p class="mt-md-4 m-0 mb-3 ">We Build For You</p>
+                    <div>
+                        <button class="get-started p-2 px-3" onclick="scollToAbout()">
+                            <div class="hover-bg"></div>
+                            Let's Build Together
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section  -->
+        <section class="about">
+            <div class="container p-lg-5 py-5 scroll">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/about-image.png" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4">
+                        <div class="heading p-2 mb-4">
+                            <h1 class="">About Us</h1>
+                            <div class="heading-border"></div>
+                        </div>
+                        <div class="details">
+                            <p style="text-align: justify;">
+                                SteelHaven construction is a leading design and construction firm specializing in
+                                delivering high-quality residential, commercial, and industrial projects. With a proven
+                                track record of 7 years, we offer end-to-end services, including architectural design,
+                                construction management, and interior design. Our experienced team focuses on
+                                innovative, sustainable solutions delivered on time and within budget.
+                                <br><br>
+                                We are committed to client satisfaction, ensuring each project meets aesthetic,
+                                functional, and financial goals. Our approach emphasizes quality, clear communication,
+                                and safety throughout the project lifecycle.
+                            </p>
+                        </div>
+                        <div class="button py-3 p-1">
+                            <a href="#"><button class="get-started p-2 px-3" onclick="scollToAbout()">
+                                    <div class="hover-bg"></div>
+                                    More About Us
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- about experience  -->
+        <section class="about-2 text-center">
+            <div class="container p-lg-5 py-5 scroll">
+                <div class="row">
+                    <div class="col-md-4 p-4 experience">
+                        <h1>
+                            <span>7</span> years
+                        </h1>
+                        <h3>Of Experience</h3>
+                    </div>
+                    <div class="col-md-4 p-4 clients">
+                        <h1>
+                            <span>500+</span>
+                        </h1>
+                        <h3>Happy Clients</h3>
+                    </div>
+                    <div class="col-md-4 p-4 projects">
+                        <h1>
+                            <span>200+</span>
+                        </h1>
+                        <h3>Complete Projects</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- services section  -->
+        <section class="services">
+            <div class="container py-5 p-md-5 scroll">
+                <div>
+                    <div class="heading">
+                        <h1>What We Do</h1>
+                        <div class="heading-border"></div>
+                        <p>We provide multiple services, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum est velit, sint vel quis voluptas harum quae sit autem eum earum mollitia deserunt
+                            dolor, aperiam sunt doloribus ea accusantium! Dolorem?</p>
+                    </div>
+                    <div class="services-options">
+                        <div class="service">
+                            <ul>
+                                <li class="active" onclick="changeServiceContent(0)">Architecture Design
+                                    <div class="list-border"></div>
+                                </li>
+                                <li class="" onclick="changeServiceContent(1)">Interior Design
+                                    <div class="list-border"></div>
+                                </li>
+                                <li class="" onclick="changeServiceContent(2)">Construction Management
+                                    <div class="list-border"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-details row justify-content-center py-4">
+                        <div class="col-lg-4 service-image text-lg-end text-center ">
+                            <img class="img-fluid" src="images/service-archicture.png" alt="">
+                        </div>
+                        <div class="col-lg-6 service-detail">
+                            <h2>
+                                Architecture Design
+                            </h2>
+                            <p class="" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Rerum placeat tenetur iste sunt
+                                at maxime repudiandae tempora quo similique repellat aliquam vitae, dicta sapiente
+                                minus, amet nostrum doloribus possimus ut?</p>
+                            <div class="button">
+                                <a href="#">
+                                    <button class=" p-2 px-3">
+                                        <div class="hover-bg"></div>
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section  -->
+        <section class="projects bg-dark">
+            <div class="clicked-project fixed-top text-center d-none">
+                <div class="close-clicked-project border p-3" onclick="hideClickedProject()"><i
+                        class="fa-solid fa-x fs-4"></i></div>
+                <img class="clicked-project-image" src="" alt="image">
+            </div>
+            <div class="container-fluid py-lg-5 py-5 px-0">
+                <div class="container px-md-5">
+                    <div class="heading p-2 mb-4">
+                        <h1 class="">Recent Projects</h1>
+                        <div class="heading-border"></div>
+                    </div>
+                </div>
+                <div class=" project-details row m-0 p-0 my-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image1.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image2.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image1.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image2.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image2.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image1.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 project-detail text-center position-relative"
+                        onclick="showClickedProject(this)">
+                        <div class="image" style="background: url('images/project-image2.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;"></div>
+                        <div class="project-hover-box">
+                            <h3 class="m-2">Click To View</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- contact section  -->
+        <section class="contact" style="overflow-x: hidden;">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-8 py-3 p-3">
+                        <div class="heading mx-sm-5 px-sm-5 p-3">
+                            <h1 class="">Stay Connected</h1>
+                            <div class="heading-border"></div>
+                        </div>
+                        <div class="mx-sm-5 px-sm-5 p-3">
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <!-- <label for="name" class="form-label">Name</label> -->
+                                    <input type="name" class="form-control bg-light" id="name" aria-describedby="name"
+                                        placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                                    <input type="email" class="form-control bg-light" id="email"
+                                        aria-describedby="emailHelp" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label for="purpose" class="form-label">Purpose</label> -->
+                                    <input type="text" class="form-control bg-light" id="purpose" placeholder="Purpose">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label for="message" class="form-label">Message</label> -->
+                                    <textarea type="text" class="form-control bg-light" id="message" rows="3"
+                                        placeholder="Message....."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 p-0">
+                        <div class="w-100 h-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6334.424779586299!2d81.04172532867925!3d26.852872201407344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDUxJzEzLjIiTiA4McKwMDInMjguMCJF!5e0!3m2!1sen!2sin!4v1738563572758!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy" height="500px" width="100%"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- user query section  -->
+        <section class="client-query bg-dark text-light">
+            <div class="container-fluid p-0">
+                <div class="row aling-item-center p-0 m-0">
+                    <div class="col-md-6 p-0">
+                        <div class="image"></div>
+                    </div>
+                    <div class="col-md-6 py-5 p-3">
+                        <div class="heading py-2">
+                            <h1 class="">Why Choose Us</h1>
+                            <div class="heading-border"></div>
+                        </div>
+                        <div class="scroll">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                            aria-controls="flush-collapseOne">
+                                            Question-1.........
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                                            repellendus,
+                                            esse ad voluptates sunt alias excepturi saepe perspiciatis molestias maxime
+                                            praesentium quis ex iure repudiandae sit doloribus temporibus corrupti
+                                            neque?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Question-2.........
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                                            repellendus,
+                                            esse ad voluptates sunt alias excepturi saepe perspiciatis molestias maxime
+                                            praesentium quis ex iure repudiandae sit doloribus temporibus corrupti
+                                            neque?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Question-3.........
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                                            repellendus,
+                                            esse ad voluptates sunt alias excepturi saepe perspiciatis molestias maxime
+                                            praesentium quis ex iure repudiandae sit doloribus temporibus corrupti
+                                            neque?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Question-4.........
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                                            repellendus,
+                                            esse ad voluptates sunt alias excepturi saepe perspiciatis molestias maxime
+                                            praesentium quis ex iure repudiandae sit doloribus temporibus corrupti
+                                            neque?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- client-testimonials section  -->
+        <section class=" client-testimonials bg-warning">
+            <div class="container p-lg-5 py-5 scroll">
+                <div class="heading p-2 mb-4">
+                    <h1 class="">Our Clients Review</h1>
+                    <div class="heading-border bg-light"></div>
+                </div>
+                <div class="position-relative">
+                    <div class="reviews bg-dark text-light p-5 my-3">
+                        <div class="review bg-dark">
+                            <div class="box ">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt ab saepe!
+                                    Provident culpa recusandae et dolore amet! Accusantium .</p>
+                                <h3 class=" mt-4">Client Name 1 </h3>
+                            </div>
+                        </div>
+                        <div class="review bg-dark">
+                            <div class="box ">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt ab saepe!
+                                    Provident culpa recusandae et dolore amet! Accusantium tempora quaerat autem
+                                    voluptatibus magni ut ducimus possimus sit architecto sunt.</p>
+                                <h3 class="mt-4">Client Name 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots d-flex justify-content-center aling-item-center flex-nowrap position-absolute">
+                        <div class="dot m-2 p-1 active"></div>
+                        <div class="dot m-2 p-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- footer section  -->
+    <footer class="bg-dark">
+        <div class="container p-lg-5 py-5 scroll">
+            <div class="footer-links d-sm-flex justify-content-center align-items-center flex-wrap text-center">
+                <a href="#">
+                    <li class="image">
+                        <img src="images/steelHeaven-logo.png" alt="SteelHeaven" height="130px">
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="">Home</li>
+                </a>
+                <a href="#">
+                    <li class="">About</li>
+                </a>
+                <a href="#">
+                    <li class="">Services</li>
+                </a>
+                <a href="#">
+                    <li class="">Contact</li>
+                </a>
+
+            </div>
+            <div class="contact-details d-sm-flex justify-content-center align-items-center flex-wrap text-center">
+                <p class="m-3"><i class="fa-solid fa-envelope"></i>: steelheaven@gmail.com</p>
+                <p class="m-3"><i class="fa-solid fa-phone"></i>: +541 54561 45514</p>
+                <p class="m-3"><i class="fa-solid fa-address-book"></i>: SteelHaven construction,
+                    Sultanpur, Lucknow
+                </p>
+            </div>
+        </div>
+        <hr class="m-0 p-0">
+        <div class=" container copyright px-lg-5 p-3 d-flex justify-content-between align-items-center">
+            <p class="p-0 m-0">
+                CopyRight 2025 All Rights Reserved
+            </p>
+            <div class="img">
+                <img src="images/steelHeaven-logo-footer.png" alt="SteelHeaven" height="40px">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- my js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
